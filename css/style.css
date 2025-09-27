@@ -2000,3 +2000,20 @@ padding: 10px 10px 10px;
 .contact-form span label {
   font-size: 12px;
 }
+
+
+.logo {
+    display: flex;
+    align-items: center; /* vertically centers logo and text */
+    gap: 12px;           /* space between logo and text */
+}
+
+.logo-img {
+    height: 50px;        /* balanced logo size */
+}
+
+.company-name {
+    font-size: 28px;     /* text size */
+    font-weight: bold;
+    color: #000;         /* text color */
+}
