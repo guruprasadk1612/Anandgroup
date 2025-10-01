@@ -71,7 +71,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <li><a href="#home" class="active"><span>Main Page</span></a></li>
                     <li><a href="#about"><span>About</span></a></li>
                     <li><a href="#services"><span>Services</span></a></li>
-                    <li><a href="#news"><span>News</span></a></li>
+                    <li><a href="#usp"><span>USP</span></a></li>
                     <li><a href="#contact"><span>Contact</span></a></li>
                     <div class="clearfix"> </div>
                 </ul>
@@ -122,6 +122,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 </div>
 	<div class="content">
+		<div id="about" class="content"></div>
 		<div class="welcome">
 			<div class="container">
 				<div class="wel-grids">
@@ -188,6 +189,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 	</div>
 	<div class="service-section">
+		<div id="usp" class="content"></div>
 		<div class="container">
 			<h3>Our USP</h3>
 			<div class="service-grids">
@@ -217,6 +219,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 		</div>
 		<div class="what">
+			<div id="services" class="content"></div>
 			<div class="container">
 				<div class="what-header">
 				<h3>what we offer</h3>
@@ -263,7 +266,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <!-- Footer Section -->
 <div class="footer-section" style="background-color: #000; color: #fff; padding: 40px 0; clear: both; margin-top: 50px; width: 100%;">
-  
+  <div id="contact" class="content"></div>
   <!-- Remove the container div to allow full width -->
   <div class="footer-top" style="text-align: center; margin-bottom: 20px;">
     <h3 style="font-size: 26px; font-weight: bold; letter-spacing: 1px; margin-bottom: 10px;">Anand Group</h3>
@@ -280,3 +283,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
   </div>
 
 </div>
+
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function(e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute("href")).scrollIntoView({
+        behavior: "smooth"
+      });
+    });
+  });
+</script>
+
